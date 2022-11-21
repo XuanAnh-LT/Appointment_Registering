@@ -1,38 +1,396 @@
-.App {
+.container_margin_page{
+  border: 2px solid #e7ecf1 ;
+  margin: 0px 30px;
+}
+
+.Header{
+  background-color: #009201;
+  color: #fff;
+  padding-left: 20px;
+  height: 60px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.container_margin{
+  margin: 20px;
+}
+
+.blue_background{
+  background-color: #d4edda;
+  padding-left: 20px;
+}
+
+/* .caution{
+height: 60px;
+line-height: 30px;
+margin: 20px;
+ color: #155724; 
+
+} */
+.alert_margin_side {
+  margin: 20px;
+}
+.alert p{
+color: #009201;
+}
+
+span{
+  color: red;
+}
+
+.Register_title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.select_type button {
+  background-color: #fff;
+  border: 1px solid #009201;
+  height: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+ .select_type button:focus {
+    background-color: #009201;
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+ #btntype1 {
+  background-color: #009201;
+  color: #fff;
+}
+
+
+
+/* .condition {
+  margin-top: 20px;
+  padding-left: 0px;
+  height: 100px;
+  color: #009201;
+}
+
+.condition ul {
+  padding-bottom: 10px;
+  color: #009201;
+} */
+
+.alert ul {
+  color: #009201;
+  padding-left: 16px;
+}
+
+.alert_margin_top{
+  margin: 20px 0px;
+}
+
+.examine_services {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+}
+
+.examine_services p {
+  font-weight: bold;
+}
+
+.setup {
+
+  padding-top: 12px;
+  --bs-gutter-x: 0px !important;
+
+  border: 1px solid #009201;
+}
+
+.hang {
+  --bs-gutter-x: 0px;
+  margin-bottom: 25px;
+
+}
+
+@media (min-width: 768px) {
+  .colum-md-6 {
+    width: 49.4%;
+    flex: 0 0 auto;
+  }
+}
+
+.getFile {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 2px;
+  text-align: center;
+}
+
+.d-none{
+  display: none;
+}
+
+.nextPage {
+  background-color: #009201;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .custom {
+    margin-right: 1%;
+  }
+}
+
+@media (min-width: 576px) {
+  .custom {
+    margin-right: 1%;
+  }
+}
+
+.select_service{
+  width: 95%;
+}
+
+.multiselect {
+  /* width: 500px; */
+  width: 98%;
+  height: 30px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-size: medium;
+}
+
+.selectBox option{
+  visibility: hidden;
+  position: relative;
+}
+
+.overSelect {
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+}
+
+
+.checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  background-color: #fff;
+}
+
+.checkboxes p {
+  margin-left: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.checkboxes label {
+  display: block;
+}
+
+.checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.multiselect select {
+  /* width: 500px; */
+  height: 40px;
+}
+
+.disable_select{
+  pointer-events:none;
+}
+
+.patient_id input {
+  /* width: 500px; */
+  width: 98%;
+  height: 40px;
+}
+
+.time_register {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.time_register p {
+  font-weight: bold;
+}
+
+.date_register input {
+  /* width: 500px; */
+  width: 98%;
+  height: 40px;
+}
+
+.hour_register_without_date{
+  display: block;
+}
+
+.hour_register_within_date{
+  display: none;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+
+.hour_register_without_date button {
+  /* width: 500px; */
+  width: 98%;
+  height: 40px;
+  background-color: #fff;
+  border: #009201 solid 1px;
+  margin-right: 2%;
+}
+
+
+.hour_register button:focus{
+  background-color: #009201;
+  color: #fff;
+}
+
+.custom_hour{
+  display: flex;
+  flex-direction: row;
+}
+
+.hour_register_within_date button{
+  height: 40px;
+  margin-left: 10px;
+}
+
+.description {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.description {
+  font-weight: bold;
+}
+
+.nextPage{
+  text-align: center;
+  text-underline-offset: unset;
+}
+
+
+.PatientInfor_title {
+  text-align: center;
+}
+
+.margin_row {
+  margin: 20px 0px;
+}
+
+.name_and_dob {
+  display: flex;
+  flex-direction: row;
+}
+
+.name_and_dob input {
+  width: 98%;
+  height: 40px;
+}
+
+.name_and_dob p {
+  font-weight: bold;
+}
+
+.phone_and_gender {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone_and_gender input {
+  width: 98%;
+  height: 40px;
+}
+
+.phone_and_gender select {
+  width: 98%;
+  height: 40px;
+}
+
+.phone_and_gender p {
+  font-weight: bold;
+}
+
+.patient_address p{
+  font-weight: bold;
+}
+
+.patient_address textarea {
+  width: 99%;
+}
+
+.turnback {
+  background-color: #fff;
+  color: #000;
+}
+
+.finalstep {
+  background-color: #009201;
+  color: #fff;
+}
+
+.secondpage{
+  text-align: center;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.secondpage #bigFont{
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondpage img{
+  background-color: #fff;
+  margin-top:30px;
 }
+
+.secondpage span{
+  font-weight: bold;
+  color: #000;
+}
+
+.smallFont{
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.smallFont #red_span{
+  color: red;
+}
+
+.smallFont #green_span{
+  color: #009201;
+}
+
+#payfee{
+  background-color: #fff;
+}
+
+#completefee{
+  background-color: #009201;
+  color: #fff;
+}
+
+#Register{
+  display: block;
+}
+
+#PatientInfor{
+  display:none;
+}
+
+#firstpage{
+  display: block;
+}
+
+#secondpage{
+  display:none;
+}
+
